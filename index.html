@@ -1,0 +1,92 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>UMR - Allocator</title>
+    <style>
+      .textarea textarea {
+        width: 100%;
+        height: 50vh;
+      }
+      .flex {
+        display: flex;
+        justify-content: space-around;
+      }
+      button {
+        margin-top: 50px;
+        width: 100%;
+      }
+      .user-input {
+        text-align: center;
+        border: 2px solid grey;
+        width: 35%;
+      }
+    </style>
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/skeleton/2.0.4/skeleton.min.css"
+    />
+  </head>
+  <body>
+    <div class="flex">
+      <!-- Geting the excel sheet Input -->
+      <div class="user-input">
+        <h4>Select Number of Allocations</h4>
+        <input
+          type="range"
+          min="1"
+          max="30"
+          value="1"
+          id="numberOfAllocations"
+        />
+
+        <input type="text" id="sliderValue" />
+      </div>
+
+      <div class="textarea">
+        <label for="">Input Value</label>
+        <textarea name="" id="inputValues"></textarea>
+      </div>
+
+      <table id="outputTable">
+        <thead>
+          <tr>
+            <td>UMR</td>
+            <td>User Name</td>
+          </tr>
+        </thead>
+        <tbody></tbody>
+      </table>
+
+      <!-- 
+        
+
+    <script language="javascript" type="text/javascript">
+          var myArray = new Array();
+          myArray[0] = "1";
+          myArray[1] = "2";
+          myArray[2] = "3";
+          myArray[3] = "4";
+          myArray[4] = "5";
+
+          for (var i = 0; i < 5; i++) {
+            document.write("<tr><td>Number " + i + " is:</td>");
+            document.write("<td>" + myArray[i] + "</td></tr>");
+          }
+        </script>
+
+        <div class="textarea">
+        <label for="">Filtered UMR</label>
+        <textarea
+          name=""
+          id="outputValueUnique"
+          placeholder="Output"
+        ></textarea>
+      </div> -->
+    </div>
+    <button id="button">Click Me</button>
+  </body>
+  <script src="index.js"></script>
+</html>
